@@ -10,7 +10,7 @@ const initialData = {
   plants: [
       {
           title: 'Synaptolepis Kirkii',
-          img_src: './plants/img/Synaptolepis_Kirkii.img',
+          img_src: '/plants/img/test.jpg',
           desc: 'description sample',
           id: 0, /*uuid*/
       },
@@ -100,20 +100,20 @@ class App extends React.Component {
         this.setState({ModalMenu: {isOpen: false}});
     };
 
-    plants = initialData.plants.map((p, index) => {
-        console.log(`Under index: ${index} goes plantID: ${p.id}`);
-        return (
-            <div key={index} className='column stretched'>
-                <PlantFace className='padded square' id={p.id} data={p} handleModalMenu={this.handleModalMenu}/>
-            </div>
-        );
-    });
+    plants = initialData.plants.map((p, index) => (
+            <PlantFace key={index} id={p.id} data={p} handleModalMenu={this.handleModalMenu}/>
+    ));
+
     render() {
         return (
-        <div className='ui segment'>
-            <PlantList plants={this.plants}/>
-            <ModalMenu handleModalMenu={this.closeModalMenu} isOpen={this.state.ModalMenu.isOpen} data={this.state.ModalMenu.data}/>
-            <SideBar />
+        <div className='ui main'>
+            <div className='ui segment'>
+                <div className='ui aligned grid equal width equal height'>
+                    <PlantList plants={this.plants}/>
+                </div>
+                <ModalMenu handleModalMenu={this.closeModalMenu} isOpen={this.state.ModalMenu.isOpen} data={this.state.ModalMenu.data}/>
+                <SideBar />
+            </div>
         </div>
         );
     }

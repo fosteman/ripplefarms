@@ -1,17 +1,6 @@
-import React, {Component} from 'react';
-import ModalMenu from './ModalMenu';
-
-class PlantList extends Component {
-    state = {
-        id: '',
-    };
-    render() {
-        console.log(this.props);
-        return (
-            <div className='ui five column grid'>
-                {this.props.plants}
-            </div>
-        );
-    }
-}
+import React from 'react';
+import {Segment} from 'semantic-ui-react';
+const PlantList = (props) => (
+        props.plants
+);
 export default PlantList;

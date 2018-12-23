@@ -1,6 +1,6 @@
-import PropTypes from "prop-types";
 import React from "react";
 import {Modal, Button, Input, Segment} from 'semantic-ui-react';
+
 const ModalMenu = (props) => {
     return (
         <Modal open={props.isOpen} onClose={props.handleModalMenu}>
@@ -9,6 +9,7 @@ const ModalMenu = (props) => {
         </Modal>
     );
 };
+
 const ModalMenuContent = (props) => {
     return (
         <Modal.Content>
@@ -18,6 +19,7 @@ const ModalMenuContent = (props) => {
         </Modal.Content>
     );
 };
+
 class ModalMenuFields extends React.Component {
     constructor(props) {
         super(props);
@@ -77,7 +79,7 @@ class ModalMenuFields extends React.Component {
                 /></Segment>
                 <Segment>
                     <Button color='green' onClick={this.handleSubmit}>Save</Button>
-                    <Button onClick={this.props.handleModalMenu}>Close</Button>
+                    <Button color='gray' onClick={this.props.handleModalMenu}>Close</Button>
                 </Segment>
             </Segment.Group>
         </Modal.Actions>
