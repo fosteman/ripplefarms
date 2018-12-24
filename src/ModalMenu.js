@@ -34,11 +34,11 @@ class ModalMenuFields extends React.Component {
             }
         }
     }
-    //TODO propTypes
+    static propTypes = { //TODO
+        plants: PropTypes.array.isRequired,
+    };
     handleSubmit = () => {
-        //TODO: this.props.onSubmit();
-        //this.props.closeMenu();
-        //clear fields
+
     };
     handleChange = (e) => {
         switch (e.target.name) {
@@ -65,20 +65,38 @@ class ModalMenuFields extends React.Component {
         return (
         <Modal.Actions>
             <Segment.Group>
-                <Segment><Input
-                    label='Title'
-                    labelPosition='left'
-                    placeholder={this.state.fields.title}
-                    onChange={this.handleChange}
-                /></Segment>
-                <Segment><Input
-                    label='Description'
-                    labelPosition='left'
-                    placeholder={this.state.fields.desc}
-                    onChange={this.handleChange}
-                /></Segment>
                 <Segment>
-                    <Button color='green' onClick={this.handleSubmit}>Save</Button>
+                    <Input
+                        name='title'
+                        label='Title'
+                        labelPosition='left'
+                        placeholder={this.state.fields.title}
+                        onChange={this.handleChange}/>
+                </Segment>
+                <Segment>
+                    <Input
+                        name='desc'
+                        label='Description'
+                        labelPosition='left'
+                        placeholder={this.state.fields.desc}
+                        onChange={this.handleChange}/>
+                </Segment>
+                <Segment>
+                    /*{{
+
+                        SAVING: <input value='Saving...' type='submit' disabled />,
+                        SUCCESS: <input value='Saved!' type='submit' disabled />,
+                        ERROR: <input
+                            value='Save Failed - Retry?'
+                            type='submit'
+                            disabled={this.validate()}
+                        />,
+                        READY: <input
+                            value='Submit'
+                            type='submit'
+                            disabled={this.validate()}
+                        />,
+                    }[status]}*/ //TODO:html analogue of 'switch' for the Submit button and loading indicator.
                     <Button color='gray' onClick={this.props.handleModalMenu}>Close</Button>
                 </Segment>
             </Segment.Group>

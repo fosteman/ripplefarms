@@ -2,11 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="2aff0fb8-08ee-4728-8153-728f1c20e3d7" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/public/img/loading.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/reduxReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/plants/img/test.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/public/plants/img/test.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ModalMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModalMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlantFace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantFace.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/PlantList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/SideBar.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/SideBar.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -23,7 +25,7 @@
       <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
+            <state relative-caret-position="90">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
@@ -32,17 +34,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="App.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="357">
-              <caret line="111" column="53" lean-forward="true" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
+            <state relative-caret-position="548">
+              <caret line="77" column="42" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="42" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#144#681#0" />
-                <element signature="e#991#1024#0" />
-                <element signature="e#1043#1400#0" />
-                <element signature="e#2474#2490#0" />
+                <element signature="e#840#856#0" />
+                <element signature="e#4099#4462#0" />
+                <element signature="e#4491#4551#0" />
+                <element signature="e#1988#2054#0" />
               </folding>
             </state>
           </provider>
@@ -51,24 +53,19 @@
       <file leaf-file-name="PlantList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PlantList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-              <folding>
-                <element signature="e#0#26#0" expanded="true" />
-              </folding>
+            <state>
+              <caret column="26" selection-start-column="26" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlantFace.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlantFace.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PlantFace.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="45" column="14" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="45" selection-end-column="14" />
+            <state relative-caret-position="415">
+              <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
-                <element signature="e#118#753#0" />
-                <element signature="e#814#1280#0" />
               </folding>
             </state>
           </provider>
@@ -77,8 +74,8 @@
       <file leaf-file-name="SideBar.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/SideBar.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="175">
-              <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+            <state relative-caret-position="105">
+              <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
               </folding>
@@ -89,13 +86,30 @@
       <file leaf-file-name="ModalMenu.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ModalMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="524">
-              <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+            <state relative-caret-position="263">
+              <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
-                <element signature="e#1#27#0" expanded="true" />
-                <element signature="e#607#1149#0" />
-                <element signature="e#2047#2254#0" />
-                <element signature="e#2286#2498#0" />
+                <element signature="e#408#626#0" />
+                <element signature="e#745#1029#0" />
+                <element signature="e#1223#1749#0" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="reduxCore.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/reduxCore.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1275">
+              <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+              <folding>
+                <element signature="e#21#1796#0" />
+                <element signature="n#!!block;n#fetchDataRequest#0" />
+                <element signature="n#!!block;n#fetchDataSuccess#0" />
+                <element signature="n#!!block;n#fetchDataFailure#0" />
+                <element signature="n#!!block;n#saveDataRequest#0" />
+                <element signature="n#!!block;n#saveDataFailure#0" />
+                <element signature="n#!!block;n#saveDataSuccess#0" />
               </folding>
             </state>
           </provider>
@@ -120,10 +134,13 @@
         <option value="$PROJECT_DIR$/public/index.html" />
         <option value="$PROJECT_DIR$/src/index.js" />
         <option value="$PROJECT_DIR$/src/SideBar.js" />
-        <option value="$PROJECT_DIR$/src/ModalMenu.js" />
+        <option value="$PROJECT_DIR$/src/PlantFace.js" />
         <option value="$PROJECT_DIR$/src/PlantList.js" />
         <option value="$PROJECT_DIR$/src/App.js" />
-        <option value="$PROJECT_DIR$/src/PlantFace.js" />
+        <option value="$PROJECT_DIR$/src/reducers.js" />
+        <option value="$PROJECT_DIR$/src/reduxReducer.js" />
+        <option value="$PROJECT_DIR$/src/reduxCore.js" />
+        <option value="$PROJECT_DIR$/src/ModalMenu.js" />
       </list>
     </option>
   </component>
@@ -164,17 +181,6 @@
             <path>
               <item name="ripplefarms" type="b2602c69:ProjectViewProjectNode" />
               <item name="ripplefarms" type="462c0819:PsiDirectoryNode" />
-              <item name="plants" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ripplefarms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ripplefarms" type="462c0819:PsiDirectoryNode" />
-              <item name="plants" type="462c0819:PsiDirectoryNode" />
-              <item name="img" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="ripplefarms" type="b2602c69:ProjectViewProjectNode" />
-              <item name="ripplefarms" type="462c0819:PsiDirectoryNode" />
               <item name="public" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -195,7 +201,11 @@
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/plants/img" />
     </key>
   </component>
@@ -222,12 +232,13 @@
       <option name="presentableId" value="Default" />
       <updated>1545504075822</updated>
       <workItem from="1545504077460" duration="5710000" />
-      <workItem from="1545516052849" duration="21419000" />
+      <workItem from="1545516052849" duration="21633000" />
+      <workItem from="1545650219448" duration="4823000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="27129000" />
+    <option name="totallyTimeSpent" value="32166000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -242,24 +253,24 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TypeScript" />
-      <window_info content_ui="combo" id="Project" order="1" visible="true" weight="0.17124736" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.17124736" />
       <window_info anchor="bottom" id="TODO" order="10" weight="0.32969698" />
       <window_info anchor="bottom" id="Docker" order="0" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="3" side_tool="true" />
-      <window_info anchor="bottom" id="Find" order="5" />
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.32969698" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.14060606" />
+      <window_info anchor="bottom" id="Terminal" order="1" visible="true" weight="0.14909092" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="TypeScript" order="7" />
       <window_info anchor="bottom" id="Message" order="2" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="5" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -270,10 +281,73 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="1" />
+      <option name="time" value="2" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="6" selection-start-line="6" selection-end-line="6" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlantList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/PlantFace.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SideBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModalMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1215">
+          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+          <folding>
+            <element signature="e#408#626#0" />
+            <element signature="e#745#1029#0" />
+            <element signature="e#1223#1749#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/App.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="111" column="53" lean-forward="true" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#840#856#0" />
+            <element signature="e#4099#4462#0" />
+            <element signature="e#4491#4551#0" />
+            <element signature="e#1988#2054#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -300,10 +374,10 @@
           <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#144#681#0" />
-            <element signature="e#991#1024#0" />
-            <element signature="e#1043#1400#0" />
-            <element signature="e#2474#2490#0" />
+            <element signature="e#840#856#0" />
+            <element signature="e#4099#4462#0" />
+            <element signature="e#4491#4551#0" />
+            <element signature="e#1988#2054#0" />
           </folding>
         </state>
       </provider>
@@ -353,9 +427,58 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/plants/img/Synaptolepis_Kirkii.jpg" />
+    <entry file="file://$PROJECT_DIR$/src/PlantList.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="26" selection-start-column="26" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SideBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reducers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="560">
+          <caret line="158" column="11" selection-start-line="158" selection-start-column="2" selection-end-line="158" selection-end-column="11" />
+          <folding>
+            <element signature="e#20#1685#0" />
+            <element signature="e#132#1681#0" />
+            <element signature="n#!!block;n#fetchDataRequest#0" />
+            <element signature="n#!!block;n#fetchDataSuccess#0" />
+            <element signature="n#!!block;n#fetchDataFailure#0" />
+            <element signature="n#!!block;n#saveDataRequest#0" />
+            <element signature="n#!!block;n#saveDataFailure#0" />
+            <element signature="n#!!block;n#saveDataSuccess#0" />
+            <element signature="n#!!block;n#fetchData#0" />
+            <element signature="n#!!block;n#saveData#0" />
+            <element signature="e#3053#3661#0" />
+            <element signature="n#!!block;n#reducer#0" />
+            <element signature="e#3767#3855#0" />
+            <element signature="e#3972#4129#0" />
+            <element signature="e#4031#4130#0" />
+            <element signature="e#4162#4259#0" />
+            <element signature="e#4268#4431#0" />
+            <element signature="e#4440#4541#0" />
+            <element signature="e#4567#4601#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reduxReducer.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
+        <state relative-caret-position="90">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -363,64 +486,54 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/plants/img/Synaptolepis_Kirkii.jpg">
-      <provider selected="true" editor-type-id="images" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/SideBar.js">
+    <entry file="file://$PROJECT_DIR$/src/PlantFace.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="175">
-          <caret line="7" column="34" lean-forward="true" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+        <state relative-caret-position="415">
+          <caret line="40" column="34" selection-start-line="40" selection-start-column="34" selection-end-line="40" selection-end-column="34" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/reduxCore.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1275">
+          <caret line="159" lean-forward="true" selection-start-line="159" selection-end-line="159" />
+          <folding>
+            <element signature="e#21#1796#0" />
+            <element signature="n#!!block;n#fetchDataRequest#0" />
+            <element signature="n#!!block;n#fetchDataSuccess#0" />
+            <element signature="n#!!block;n#fetchDataFailure#0" />
+            <element signature="n#!!block;n#saveDataRequest#0" />
+            <element signature="n#!!block;n#saveDataFailure#0" />
+            <element signature="n#!!block;n#saveDataSuccess#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ModalMenu.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="524">
-          <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
+        <state relative-caret-position="263">
+          <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
-            <element signature="e#1#27#0" expanded="true" />
-            <element signature="e#607#1149#0" />
-            <element signature="e#2047#2254#0" />
-            <element signature="e#2286#2498#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlantList.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="3" column="20" lean-forward="true" selection-start-line="3" selection-start-column="20" selection-end-line="3" selection-end-column="20" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#408#626#0" />
+            <element signature="e#745#1029#0" />
+            <element signature="e#1223#1749#0" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="111" column="53" lean-forward="true" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
+        <state relative-caret-position="548">
+          <caret line="77" column="42" lean-forward="true" selection-start-line="77" selection-start-column="27" selection-end-line="77" selection-end-column="42" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#144#681#0" />
-            <element signature="e#991#1024#0" />
-            <element signature="e#1043#1400#0" />
-            <element signature="e#2474#2490#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/PlantFace.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="45" column="14" lean-forward="true" selection-start-line="39" selection-start-column="12" selection-end-line="45" selection-end-column="14" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-            <element signature="e#118#753#0" />
-            <element signature="e#814#1280#0" />
+            <element signature="e#840#856#0" />
+            <element signature="e#4099#4462#0" />
+            <element signature="e#4491#4551#0" />
+            <element signature="e#1988#2054#0" />
           </folding>
         </state>
       </provider>

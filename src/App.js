@@ -6,72 +6,19 @@ import uuid from 'uuid';
 import ModalMenu from "./ModalMenu";
 
 
-const initialData = {
-  plants: [
-      {
-          title: 'Synaptolepis Kirkii',
-          img_src: '/plants/img/test.jpg',
-          desc: 'description sample',
-          id: 0, /*uuid*/
-      },
-      {
-          title: 'Lepidum Mayenii',
-          img_src: './plants/img/Lepidum_Mayenii.img',
-          desc: 'description sample',
-          id: 1,
-      },
-      {
-          title: 'Epimedium Grandiflorum',
-          img_src: './plants/img/Epimedium Grandiflorum.img',
-          desc: 'description sample',
-          id: 2,
-      },
-      {
-          title: 'Synaptolepis Kirkii',
-          img_src: './plants/img/Synaptolepis_Kirkii.img',
-          desc: 'description sample',
-          id: 3, /*uuid*/
-      },
-      {
-          title: 'Lepidum Mayenii',
-          img_src: './plants/img/Lepidum_Mayenii.img',
-          desc: 'description sample',
-          id: 4,
-      },
-      {
-          title: 'Epimedium Grandiflorum',
-          img_src: './plants/img/Epimedium Grandiflorum.img',
-          desc: 'description sample',
-          id: 5,
-      },
-      {
-          title: 'Synaptolepis Kirkii',
-          img_src: './plants/img/Synaptolepis_Kirkii.img',
-          desc: 'description sample',
-          id: 6, /*uuid*/
-      },
-      {
-          title: 'Lepidum Mayenii',
-          img_src: './plants/img/Lepidum_Mayenii.img',
-          desc: 'description sample',
-          id: 7,
-      },
-      {
-          title: 'Epimedium Grandiflorum',
-          img_src: './plants/img/Epimedium Grandiflorum.img',
-          desc: 'description sample',
-          id: 8,
-      },
-  ],
-
-};
-
-
-
-
 
 class App extends React.Component {
+    static propTypes = {
+        plants: PropTypes.array.isRequired,
+        isLoading: PropTypes.bool.isRequired,
+        isUploading: PropTypes.bool.isRequired,
+        loadStatus: PropTypes.string.isRequired,
+        uploadStatus: PropTypes.string.isRequired,
+        fields: PropTypes.object,
+        onSubmit: PropTypes.func.isRequired,
+    };
     state = {
+        Errors: [],
         ModalMenu: {
             isOpen: false,
             id: 0,
@@ -82,8 +29,14 @@ class App extends React.Component {
             },
         },
     };
+    isValid = () => {
+        if (this.state.ModalMenu.data.title.length < 2) return false;
+        if (this.state.ModalMenu.data.desc.length < 2) return false;
+        if (!this.state.ModalMenu.data.img_src) return false;
+        return true;
+    };
     handleModalMenu = (id) => {
-        const p = initialData.plants.find((pl) => (pl.id === id));
+        const p = this.props.plants.find((pl) => (pl.id === id));
         this.setState({
             ModalMenu: {
                 isOpen: true,
@@ -99,12 +52,23 @@ class App extends React.Component {
     closeModalMenu = () => {
         this.setState({ModalMenu: {isOpen: false}});
     };
+    onFormSubmit = (evt) => {
+        const plant = this.state.ModalMenu.data;
+        evt.preventDefault();
+        if (!this.isValid())
+            return;
+        this.props.onSubmit(...this.props.plants, plant);
+    };
 
-    plants = initialData.plants.map((p, index) => (
+
+    plants = this.props.plants.map((p, index) => (
             <PlantFace key={index} id={p.id} data={p} handleModalMenu={this.handleModalMenu}/>
     ));
 
     render() {
+        if (this.props.isLoading) {
+            return <img alt='loading' src='/img/loading.gif'/>;
+        }
         return (
         <div className='ui main'>
             <div className='ui segment'>
