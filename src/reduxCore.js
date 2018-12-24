@@ -1,3 +1,4 @@
+import { createStore, applyMiddleware } from 'redux'; //async actions support
 
 const initialData = {
     isLoading: false,
@@ -157,3 +158,6 @@ export function reducer (state = initialData, action) {
 }
 
 /*Junctions*/
+
+/*Core*/
+export const store = createStore(reducer);

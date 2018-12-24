@@ -1,14 +1,14 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import PlantList from './PlantList';
 import SideBar from './SideBar';
 import PlantFace from './PlantFace';
 import uuid from 'uuid';
 import ModalMenu from "./ModalMenu";
-
-
+import {store} from './reduxCore';
 
 class App extends React.Component {
-    static propTypes = {
+    /*static propTypes = { //TODO: fix undefined PropTypes
         plants: PropTypes.array.isRequired,
         isLoading: PropTypes.bool.isRequired,
         isUploading: PropTypes.bool.isRequired,
@@ -16,7 +16,7 @@ class App extends React.Component {
         uploadStatus: PropTypes.string.isRequired,
         fields: PropTypes.object,
         onSubmit: PropTypes.func.isRequired,
-    };
+    };*/
     state = {
         Errors: [],
         ModalMenu: {

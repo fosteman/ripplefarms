@@ -1,11 +1,12 @@
 import React from "react";
+import PropTypes from 'prop-types';
 import {Modal, Button, Input, Segment} from 'semantic-ui-react';
 
 const ModalMenu = (props) => {
     return (
         <Modal open={props.isOpen} onClose={props.handleModalMenu}>
             <ModalMenuContent data={props.data}/>
-            <ModalMenuFields data={props.data} handleModalMenu={props.handleModalMenu}/>
+            <ModalMenuFields data={props.data} handleModalMenu={props.handleModalMenu} handleUpload={props.handleUpload}/>
         </Modal>
     );
 };
@@ -38,7 +39,7 @@ class ModalMenuFields extends React.Component {
         plants: PropTypes.array.isRequired,
     };
     handleSubmit = () => {
-
+        this.props.handleUpload(this.state.fields);
     };
     handleChange = (e) => {
         switch (e.target.name) {
@@ -62,6 +63,7 @@ class ModalMenuFields extends React.Component {
         }
     };
     render() {
+        let status = 'READY'; //TODO:
         return (
         <Modal.Actions>
             <Segment.Group>
@@ -82,7 +84,7 @@ class ModalMenuFields extends React.Component {
                         onChange={this.handleChange}/>
                 </Segment>
                 <Segment>
-                    /*{{
+                    {{
 
                         SAVING: <input value='Saving...' type='submit' disabled />,
                         SUCCESS: <input value='Saved!' type='submit' disabled />,
@@ -96,7 +98,7 @@ class ModalMenuFields extends React.Component {
                             type='submit'
                             disabled={this.validate()}
                         />,
-                    }[status]}*/ //TODO:html analogue of 'switch' for the Submit button and loading indicator.
+                    }[status]} //TODO:html analogue of 'switch' for the Submit button and loading indicator.
                     <Button color='gray' onClick={this.props.handleModalMenu}>Close</Button>
                 </Segment>
             </Segment.Group>
