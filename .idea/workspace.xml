@@ -1,23 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list id="2aff0fb8-08ee-4728-8153-728f1c20e3d7" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/ModalMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModalMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlantFace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantFace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlantList.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantList.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reduxCore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reduxCore.js" afterDir="false" />
-    </list>
+    <list id="2aff0fb8-08ee-4728-8153-728f1c20e3d7" name="Default" comment="" />
     <list default="true" id="9c8b117b-4a41-471f-946a-1692b1efb7ef" name="Redux integration" comment="comment: current configuration of PlantList does not allow connect to take control over this process, for it also handles ModalMenu. Solution: mergeProps might be utilized.">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/fosteman.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/deployment.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/ModalMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/ModalMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/PlantFace.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/PlantFace.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/reduxCore.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/reduxCore.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -46,21 +34,23 @@
       <file leaf-file-name="App.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/App.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
+            <state relative-caret-position="120">
+              <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#130#169#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PlantList.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PlantList.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/PlantList.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="40">
-              <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+            <state relative-caret-position="523">
+              <caret line="50" column="41" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="41" />
               <folding>
+                <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#510#872#0" />
                 <element signature="e#600#864#0" />
                 <element signature="e#1005#1065#0" />
@@ -73,7 +63,7 @@
         <entry file="file://$PROJECT_DIR$/src/PlantFace.js">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="266">
-              <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+              <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
               <folding>
                 <element signature="e#0#26#0" expanded="true" />
                 <element signature="e#118#772#0" />
@@ -96,18 +86,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ModalMenu.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="ModalMenu.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ModalMenu.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="45">
-              <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+            <state relative-caret-position="251">
+              <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
               <folding>
-                <element signature="e#408#626#0" />
+                <element signature="e#0#26#0" expanded="true" />
+                <element signature="e#122#369#0" />
                 <element signature="e#825#1044#0" />
-                <element signature="e#1414#1643#0" />
-                <element signature="e#1213#1755#0" />
-                <element signature="e#1223#1749#0" />
-                <element signature="n#!!block;n#render#0;n#ModalMenuFields#0" />
+                <element signature="e#1838#2065#0" />
+                <element signature="e#1964#2584#0" />
+                <element signature="e#2044#2259#0" />
               </folding>
             </state>
           </provider>
@@ -153,6 +143,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Tim Fosteman &lt;fosteman@mk8.local&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
@@ -165,10 +160,10 @@
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/src/PlantFace.js" />
         <option value="$PROJECT_DIR$/src/index.js" />
-        <option value="$PROJECT_DIR$/src/App.js" />
         <option value="$PROJECT_DIR$/src/reduxCore.js" />
-        <option value="$PROJECT_DIR$/src/ModalMenu.js" />
         <option value="$PROJECT_DIR$/src/PlantList.js" />
+        <option value="$PROJECT_DIR$/src/App.js" />
+        <option value="$PROJECT_DIR$/src/ModalMenu.js" />
       </list>
     </option>
   </component>
@@ -177,69 +172,6 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="LineStatusTrackerManager">
-    <file path="$PROJECT_DIR$/src/App.js">
-      <ranges>
-        <range start1="1" end1="3" start2="1" end2="1" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="4" end1="6" start2="2" end2="2" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="7" end1="7" start2="3" end2="5" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="8" end1="60" start2="6" end2="6" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="61" end1="66" start2="7" end2="15" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="67" end1="67" start2="16" end2="17" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="69" end1="70" start2="19" end2="20" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="71" end1="73" start2="21" end2="21" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="75" end1="78" start2="23" end2="24" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="81" end1="82" start2="27" end2="28" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/ModalMenu.js">
-      <ranges>
-        <range start1="3" end1="3" start2="3" end2="5" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="6" end1="7" start2="8" end2="9" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="8" end1="9" start2="10" end2="11" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="24" end1="24" start2="26" end2="34" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="28" end1="34" start2="38" end2="42" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="36" end1="39" start2="44" end2="55" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="41" end1="42" start2="57" end2="61" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="65" end1="66" start2="84" end2="85" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="69" end1="69" start2="88" end2="89" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="93" end1="94" start2="113" end2="114" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="98" end1="99" start2="118" end2="119" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="101" end1="102" start2="121" end2="122" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/PlantFace.js">
-      <ranges>
-        <range start1="2" end1="2" start2="2" end2="4" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="3" end1="5" start2="5" end2="7" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="19" end1="23" start2="21" end2="23" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="28" end1="31" start2="28" end2="31" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="32" end1="32" start2="32" end2="40" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="35" end1="38" start2="43" end2="43" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-      </ranges>
-    </file>
-    <file path="$PROJECT_DIR$/src/reduxCore.js">
-      <ranges>
-        <range start1="0" end1="1" start2="0" end2="3" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="12" end1="13" start2="14" end2="15" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="18" end1="19" start2="20" end2="21" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="24" end1="25" start2="26" end2="27" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="30" end1="31" start2="32" end2="33" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="36" end1="37" start2="38" end2="39" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="42" end1="43" start2="44" end2="45" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="48" end1="49" start2="50" end2="51" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="54" end1="55" start2="56" end2="57" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="60" end1="61" start2="62" end2="63" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="69" end1="70" start2="71" end2="72" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="72" end1="73" start2="74" end2="74" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="108" end1="109" start2="109" end2="109" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-        <range start1="133" end1="134" start2="133" end2="138" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="135" end1="135" start2="139" end2="140" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="145" end1="145" start2="150" end2="151" changelist="2aff0fb8-08ee-4728-8153-728f1c20e3d7" />
-        <range start1="159" end1="161" start2="165" end2="170" changelist="9c8b117b-4a41-471f-946a-1692b1efb7ef" />
-      </ranges>
-    </file>
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/node_modules" />
@@ -250,7 +182,7 @@
       <path value="$PROJECT_DIR$/semantic/tasks/config/admin/templates/package.json" />
     </packageJsonPaths>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds" extendedState="6" fullScreen="true">
     <option name="width" value="1440" />
     <option name="height" value="900" />
   </component>
@@ -325,7 +257,7 @@
       <updated>1545504075822</updated>
       <workItem from="1545504077460" duration="5710000" />
       <workItem from="1545516052849" duration="21633000" />
-      <workItem from="1545650219448" duration="16254000" />
+      <workItem from="1545650219448" duration="22512000" />
     </task>
     <task id="LOCAL-00001" summary="Redux integration">
       <changelist id="9c8b117b-4a41-471f-946a-1692b1efb7ef" name="Redux integration" comment="" />
@@ -340,7 +272,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="43597000" />
+    <option name="totallyTimeSpent" value="49855000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -352,7 +284,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1440" height="900" extended-state="0" />
+    <frame x="0" y="0" width="1440" height="900" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="1" weight="0.17124736" />
@@ -363,7 +295,7 @@
       <window_info anchor="bottom" id="Run" order="7" />
       <window_info anchor="bottom" id="Version Control" order="4" weight="0.14181818" />
       <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.11272727" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="1" visible="true" weight="0.27757576" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info id="Favorites" order="0" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -429,11 +361,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <MESSAGE value="comment: current configuration of PlantList does not allow connect to take control over this process, for it also handles ModalMenu. Solution: mergeProps might be utilized." />
+    <option name="LAST_COMMIT_MESSAGE" value="comment: current configuration of PlantList does not allow connect to take control over this process, for it also handles ModalMenu. Solution: mergeProps might be utilized." />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="6" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
@@ -452,6 +388,7 @@
         <state>
           <caret column="26" selection-start-column="26" selection-end-column="26" />
           <folding>
+            <element signature="e#0#26#0" expanded="true" />
             <element signature="e#510#872#0" />
             <element signature="e#600#864#0" />
             <element signature="e#1005#1065#0" />
@@ -487,12 +424,12 @@
         <state relative-caret-position="1215">
           <caret line="82" column="26" lean-forward="true" selection-start-line="82" selection-start-column="26" selection-end-line="82" selection-end-column="26" />
           <folding>
-            <element signature="e#408#626#0" />
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#122#369#0" />
             <element signature="e#825#1044#0" />
-            <element signature="e#1414#1643#0" />
-            <element signature="e#1213#1755#0" />
-            <element signature="e#1223#1749#0" />
-            <element signature="n#!!block;n#render#0;n#ModalMenuFields#0" />
+            <element signature="e#1838#2065#0" />
+            <element signature="e#1964#2584#0" />
+            <element signature="e#2044#2259#0" />
           </folding>
         </state>
       </provider>
@@ -503,6 +440,7 @@
           <caret line="111" column="53" lean-forward="true" selection-start-line="111" selection-start-column="53" selection-end-line="111" selection-end-column="53" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#130#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -533,6 +471,7 @@
           <caret line="47" column="36" lean-forward="true" selection-start-line="47" selection-start-column="36" selection-end-line="47" selection-end-column="36" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#130#169#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -631,26 +570,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/SideBar.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="154">
-          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/App.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="9" column="28" lean-forward="true" selection-start-line="9" selection-start-column="28" selection-end-line="9" selection-end-column="28" />
-          <folding>
-            <element signature="e#0#26#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/reduxCore.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="18">
@@ -670,17 +589,23 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ModalMenu.js">
+    <entry file="file://$PROJECT_DIR$/src/App.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="32" selection-start-line="3" selection-start-column="32" selection-end-line="3" selection-end-column="32" />
+        <state relative-caret-position="120">
+          <caret line="6" lean-forward="true" selection-start-line="6" selection-end-line="6" />
           <folding>
-            <element signature="e#408#626#0" />
-            <element signature="e#825#1044#0" />
-            <element signature="e#1414#1643#0" />
-            <element signature="e#1213#1755#0" />
-            <element signature="e#1223#1749#0" />
-            <element signature="n#!!block;n#render#0;n#ModalMenuFields#0" />
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#130#169#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/SideBar.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="154">
+          <caret line="7" column="34" selection-start-line="7" selection-start-column="34" selection-end-line="7" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
           </folding>
         </state>
       </provider>
@@ -688,7 +613,7 @@
     <entry file="file://$PROJECT_DIR$/src/PlantFace.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="266">
-          <caret line="42" column="6" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
+          <caret line="42" column="6" lean-forward="true" selection-start-line="42" selection-start-column="6" selection-end-line="42" selection-end-column="6" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
             <element signature="e#118#772#0" />
@@ -700,12 +625,28 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/PlantList.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="40">
-          <caret line="2" column="35" selection-start-line="2" selection-start-column="35" selection-end-line="2" selection-end-column="35" />
+        <state relative-caret-position="523">
+          <caret line="50" column="41" selection-start-line="50" selection-start-column="27" selection-end-line="50" selection-end-column="41" />
           <folding>
+            <element signature="e#0#26#0" expanded="true" />
             <element signature="e#510#872#0" />
             <element signature="e#600#864#0" />
             <element signature="e#1005#1065#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ModalMenu.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="251">
+          <caret line="64" column="4" selection-start-line="64" selection-start-column="4" selection-end-line="64" selection-end-column="4" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+            <element signature="e#122#369#0" />
+            <element signature="e#825#1044#0" />
+            <element signature="e#1838#2065#0" />
+            <element signature="e#1964#2584#0" />
+            <element signature="e#2044#2259#0" />
           </folding>
         </state>
       </provider>
