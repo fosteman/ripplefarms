@@ -91,11 +91,11 @@ function saveDataSuccess (data) {
     return {type: SAVE_DATA_SUCCESS, data};
 }
 
-/*async action creators*/
-export function fetchData () {
+/*TODO:async action creators*/
+/*export function fetchData () {
     return function (dispatch) {
         dispatch(fetchDataRequest());
-        //TODO: apiClient.loadData().then((data) => {dispatch(fetchDataSuccess(data))});
+        apiClient.loadData().then((data) => {dispatch(fetchDataSuccess(data))});
     }
 }
 export function saveData (data) {
@@ -105,9 +105,9 @@ export function saveData (data) {
             .then((respond) => {dispatch(saveDataSuccess(data))})
             .catch((error) => {dispatch(saveDataFailure(error))})
     }
-}
+}*/
 
-/*api for localStorage*/
+/*api for localStorage
 const apiClient = {
     loadData: function () {
         return {
@@ -130,7 +130,7 @@ const apiClient = {
     },
     count: 1,
 };
-
+*/
 /*reducer TODO: move to reduxReducer.js*/
 export function reducer (state = initialData, action) {
     switch (action.type) {

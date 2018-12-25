@@ -2,7 +2,6 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import PlantList from './PlantList';
 import SideBar from './SideBar';
-import PlantFace from './PlantFace';
 import uuid from 'uuid';
 import ModalMenu from "./ModalMenu";
 import {store} from './reduxCore';
@@ -48,7 +47,7 @@ class App extends React.Component {
                 },
             },
         });
-    };
+    }; //TODO:Junction the Interconnection that appeared between <ModalMenu/> and <PlantFace.Button/>
     closeModalMenu = () => {
         this.setState({ModalMenu: {isOpen: false}});
     };
@@ -60,11 +59,6 @@ class App extends React.Component {
         this.props.onSubmit(...this.props.plants, plant);
     };
 
-
-    plants = this.props.plants.map((p, index) => (
-            <PlantFace key={index} id={p.id} data={p} handleModalMenu={this.handleModalMenu}/>
-    ));
-
     render() {
         if (this.props.isLoading) {
             return <img alt='loading' src='/img/loading.gif'/>;
@@ -73,7 +67,7 @@ class App extends React.Component {
         <div className='ui main'>
             <div className='ui segment'>
                 <div className='ui aligned grid equal width equal height'>
-                    <PlantList plants={this.plants}/>
+                    <PlantList plants={this.props.plants}/> TODO:connecttoredux-store
                 </div>
                 <ModalMenu handleModalMenu={this.closeModalMenu} isOpen={this.state.ModalMenu.isOpen} data={this.state.ModalMenu.data}/>
                 <SideBar />

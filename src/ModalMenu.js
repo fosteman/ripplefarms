@@ -21,7 +21,7 @@ const ModalMenuContent = (props) => {
     );
 };
 
-class ModalMenuFields extends React.Component {
+class ModalMenuFields extends React.Component { //controlled element.
     constructor(props) {
         super(props);
         this.state = {
@@ -30,8 +30,8 @@ class ModalMenuFields extends React.Component {
                 desc: this.props.data.desc,
                 pic_src: this.props.data.img_src,
                 id: this.props.data.id,
-                timer: {},
-                progress: 51,
+                //TODO:timer: {},
+                //TODO:progress: 51,
             }
         }
     }
