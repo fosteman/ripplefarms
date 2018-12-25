@@ -1,12 +1,14 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import {Modal, Button, Input, Segment} from 'semantic-ui-react';
+import {SAVE_DATA_REQUEST, store} from "./reduxCore";
+
 
 const ModalMenu = (props) => {
     return (
-        <Modal open={props.isOpen} onClose={props.handleModalMenu}>
+        <Modal open={props.isOpen} onClose={props.closeModalMenu}>
             <ModalMenuContent data={props.data}/>
-            <ModalMenuFields data={props.data} handleModalMenu={props.handleModalMenu} handleUpload={props.handleUpload}/>
+            <ModalMenuFields fields={props.fields} closeModalMenu={props.closeModalMenu} handleUpload={props.handleUpload}/>
         </Modal>
     );
 };
@@ -22,24 +24,41 @@ const ModalMenuContent = (props) => {
 };
 
 class ModalMenuFields extends React.Component { //controlled element.
+    propTypes = {
+        fields: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            img_src: PropTypes.string,
+            desc: PropTypes.string,
+            id: PropTypes.string.isRequired,
+        }),
+    };
     constructor(props) {
         super(props);
         this.state = {
             fields: {
-                title: this.props.data.title,
-                desc: this.props.data.desc,
-                pic_src: this.props.data.img_src,
-                id: this.props.data.id,
-                //TODO:timer: {},
-                //TODO:progress: 51,
+                title: this.props.fields.title,
+                desc: this.props.fields.desc,
+                img_src: this.props.fields.img_src,
+                id: this.props.fields.id,
             }
         }
-    }
-    static propTypes = { //TODO
-        plants: PropTypes.array.isRequired,
+    } //construct menu from props
+    isValid = () => {
+        if (this.state.fields.title.length < 2) return false;
+        if (this.state.fields.desc.length < 2) return false;
+        if (!this.state.fields.img_src) return false;
+        return true;
+    };
+    onFormSubmit = (evt) => {
+        const plant = this.state.ModalMenu.data;
+        evt.preventDefault();
+        if (!this.isValid()) return;
     };
     handleSubmit = () => {
-        this.props.handleUpload(this.state.fields);
+        store.dispatch({
+            type:'SAVE_DATA_REQUEST',
+            fields: this.state.fields,
+        });
     };
     handleChange = (e) => {
         switch (e.target.name) {
@@ -63,7 +82,7 @@ class ModalMenuFields extends React.Component { //controlled element.
         }
     };
     render() {
-        let status = 'READY'; //TODO:
+        let status = 'READY'; //TODO: implement form, connect submit button
         return (
         <Modal.Actions>
             <Segment.Group>
@@ -91,15 +110,15 @@ class ModalMenuFields extends React.Component { //controlled element.
                         ERROR: <input
                             value='Save Failed - Retry?'
                             type='submit'
-                            disabled={this.validate()}
+                            disabled={!this.isValid()}
                         />,
                         READY: <input
                             value='Submit'
                             type='submit'
-                            disabled={this.validate()}
+                            disabled={!this.isValid()}
                         />,
                     }[status]} //TODO:html analogue of 'switch' for the Submit button and loading indicator.
-                    <Button color='gray' onClick={this.props.handleModalMenu}>Close</Button>
+                    <Button color='gray' onClick={this.props.closeModalMenu}>Close</Button>
                 </Segment>
             </Segment.Group>
         </Modal.Actions>

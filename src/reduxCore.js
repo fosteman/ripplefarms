@@ -1,4 +1,6 @@
-import { createStore, applyMiddleware } from 'redux'; //async actions support
+import { createStore, applyMiddleware } from 'redux';
+import {connect} from 'react-redux';
+import uuid from 'uuid';
 
 const initialData = {
     isLoading: false,
@@ -10,55 +12,55 @@ const initialData = {
             title: 'Synaptolepis Kirkii',
             img_src: '/plants/img/test.jpg',
             desc: 'description sample',
-            id: 0, /*uuid*/
+            id: uuid.v4(), /*uuid*/
         },
         {
             title: 'Lepidum Mayenii',
             img_src: './plants/img/Lepidum_Mayenii.img',
             desc: 'description sample',
-            id: 1,
+            id: uuid.v4(),
         },
         {
             title: 'Epimedium Grandiflorum',
             img_src: './plants/img/Epimedium Grandiflorum.img',
             desc: 'description sample',
-            id: 2,
+            id: uuid.v4(),
         },
         {
             title: 'Synaptolepis Kirkii',
             img_src: './plants/img/Synaptolepis_Kirkii.img',
             desc: 'description sample',
-            id: 3, /*uuid*/
+            id: uuid.v4(), /*uuid*/
         },
         {
             title: 'Lepidum Mayenii',
             img_src: './plants/img/Lepidum_Mayenii.img',
             desc: 'description sample',
-            id: 4,
+            id: uuid.v4(),
         },
         {
             title: 'Epimedium Grandiflorum',
             img_src: './plants/img/Epimedium Grandiflorum.img',
             desc: 'description sample',
-            id: 5,
+            id: uuid.v4(),
         },
         {
             title: 'Synaptolepis Kirkii',
             img_src: './plants/img/Synaptolepis_Kirkii.img',
             desc: 'description sample',
-            id: 6, /*uuid*/
+            id: uuid.v4(), /*uuid*/
         },
         {
             title: 'Lepidum Mayenii',
             img_src: './plants/img/Lepidum_Mayenii.img',
             desc: 'description sample',
-            id: 7,
+            id: uuid.v4(),
         },
         {
             title: 'Epimedium Grandiflorum',
             img_src: './plants/img/Epimedium Grandiflorum.img',
             desc: 'description sample',
-            id: 8,
+            id: uuid.v4(),
         },
     ],
 
@@ -67,10 +69,9 @@ const initialData = {
 export const FETCH_DATA_REQUEST = 'FETCH_DATA_REQUEST';
 export const FETCH_DATA_SUCCESS = 'FETCH_DATA_SUCCESS';
 export const FETCH_DATA_FAILURE = 'FETCH_DATA_FAILURE';
-export const SAVE_DATA_REQUEST = 'SAVE_DATA_REQUEST';
+export const SAVE_DATA_REQUEST = 'SAVE_DATA_REQUEST'; //comes from ModalMenu handleSubmit
 export const SAVE_DATA_SUCCESS = 'SAVE_DATA_SUCCESS';
 export const SAVE_DATA_FAILURE = 'SAVE_DATA_FAILURE';
-
 /*function: action*/
 function fetchDataRequest() {
     return {type: FETCH_DATA_REQUEST};
@@ -106,7 +107,6 @@ export function saveData (data) {
             .catch((error) => {dispatch(saveDataFailure(error))})
     }
 }*/
-
 /*api for localStorage
 const apiClient = {
     loadData: function () {
@@ -131,8 +131,13 @@ const apiClient = {
     count: 1,
 };
 */
-/*reducer TODO: move to reduxReducer.js*/
+/**/
+
+
+
+/*reducer*/
 export function reducer (state = initialData, action) {
+
     switch (action.type) {
         case FETCH_DATA_REQUEST:
             return Object.assign({}, state, {isLoading: true});
@@ -143,6 +148,7 @@ export function reducer (state = initialData, action) {
             });
         case FETCH_DATA_FAILURE:
             return Object.assign({}, state, {loadStatus: 'ERR fetching'}); //TODO: implement this
+
         case SAVE_DATA_REQUEST:
             return Object.assign({}, state, {uploadStatus: 'UPLOADING'});
         case SAVE_DATA_SUCCESS:
@@ -157,7 +163,10 @@ export function reducer (state = initialData, action) {
     }
 }
 
-/*Junctions*/
-
+/*Junctions\Maps comment: current configuration of PlantList does not allow connect to take control over this process, for it also handles ModalMenu. Solution: mergeProps might be utilized.
+/*const mapStateToModalMenu = (reduxState) => {
+    const plantFaces = reduxState.plants.map((p, index) => (<PlantFace key={index} id={p.id} data={p} handleModalMenu={this.handleModalMenu}/>));
+    return
+};*/
 /*Core*/
 export const store = createStore(reducer);

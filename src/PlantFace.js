@@ -1,8 +1,10 @@
 import React from 'react';
 import {Button, Image} from 'semantic-ui-react';
+import PropTypes from "prop-types";
+import uuid from "uuid";
 
-const DetailedContainer = props => (
-    <div>
+/*presentational components*/
+const DetailedContainer = props => (<div>
         <h4>{props.data.title}</h4>
         <div className='ui placeholder very padded' >
             <div className='image header'>
@@ -17,24 +19,27 @@ const DetailedContainer = props => (
             </div>
         </div>
         <Button attached='bottom' className='ui fluid basic button' onClick={() => (props.handleModalMenu(props.id))}>Open ModalMenu</Button>
-    </div>
-);
-const FaceContainer = props => (
-    <div className='content'>
+    </div>);
+const FaceContainer = props => (<div className='content'>
         <div className='square image header'>
             <Image src={props.data.img_src} size='large' alt={props.data.title}/>
         </div>
         <p><metadata>Position: depends on ID: props.data.id}</metadata></p>
         <p><metadata>Progress: calculated with Object.Date()</metadata></p>
-    </div>
-);
-
+    </div>);
+/**/
+/**/
 class PlantFace extends React.Component {
+    propTypes = {
+        data: PropTypes.shape({
+            title: PropTypes.string.isRequired,
+            img_src: PropTypes.string,
+            desc: PropTypes.string,
+            id: PropTypes.string.isRequired,
+        }),
+    };
     state = {
         faceDetails: false,
-    };
-    handleModalMenu = () => {
-        this.props.handleModalMenu(this.props.id);
     };
     render() {
         return (
